@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    #video-background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      z-index: 0; 
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .card {
+      background-color: rgba(110, 172, 218, 0.3);
+      border: 10px double rgba(255, 255, 255, 0.2);
+      border-radius: 50px;
+      width: 90%;
+      max-width: 800px; 
+      color: black;
+    }
+
+    .navbar-nav {
+      flex-direction: row;
+      width: auto;
+    }
+
+    .nav-link {
+      text-align: left;
+      transition: background-color 0.3s, color 0.3s;
+      padding: 10px 15px; 
+    }
+
+    .nav-link:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+      color: #A7E6FF;
+      border-radius: 10px;
+    }
+
+    .navbar-brand {
+      text-align: left;
+      transition: background-color 0.3s, color 0.3s;
+      padding: 10px 15px;
+    }
+
+    .navbar-brand:hover {
+      color: #A7E6FF;
+    }
+
+    .footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.social-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-link:hover {
+    text-decoration: underline;
+}
+
+
+  </style>
+</head>
+<body>
+
+  <video autoplay muted loop id="video-background">
+    <source src="adu.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+
+  <div class="overlay"></div>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">PORTFOLIO</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="labs.html">Exercises</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="resources.html">Other</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container my-5 content">
+    <div class="card p-4">
+      <h1>APPLICATIONS DEVT & EMERGING TECHNOLOGIES</h1>
+      <p class="lead">This course provides opportunity for students for students to learn new approach in the creation of web pages using server 
+          side scripting language. It provides introduction to dynamic and interactive tools and methods in web development. It also focuses on 
+          the use of PHP and MySQLi in the creation of interactive and dynamic webpages with database applications.</p>
+      
+      <h3>Course Objectives</h3>
+      <ul>
+        <li>To develop a foundational understanding of structured programming concepts and syntax using PHP, enabling students to write basic scripts
+           that follow programming standards.</li>
+        <li>To equip students with practical skills in web development, focusing on integrating PHP into web applications, with an emphasis on 
+          debugging and troubleshooting techniques.</li>
+        <li>To guide students in designing program flowcharts and structuring code for solving simple computing problems, ensuring the solutions 
+          meet the specified functional requirements of a website.</li>
+      </ul>
+
+      <h3>Course Outcomes</h3>
+      <ul>
+        <li>1. Explain the fundamental principle structured programming language using PHP Script.</li>
+        <li>2. Apply the fundamental principles of web development in creating computing application with debugging techniques.</li>
+        <li>3. Design program flow and program structure for simple computing problems that meets specific requirements for the program website.</li>
+      </ul>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-content">
+        <p>&copy; 2024 Delos Reyes. All Rights Reserved.</p>
+        <p>Follow us on social media: 
+            <a href="https://www.facebook.com/francop777" class="social-link">Facebook</a> | 
+            <a href="https://www.instagram.com/pranko777/" class="social-link">Instagram</a>
+        </p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercises</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    #video-background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      z-index: 0;
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+      color: white;
+    }
+
+    .card {
+      background-color: rgba(110, 172, 218, 0.3);
+      border: 3px solid rgb(167, 230, 255, 0.8);
+      padding: 20px;
+      font-size: 1.2rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .card-title {
+      font-size: 2rem;
+    }
+
+    .card-text {
+      font-size: 1rem;
+      text-align: justify;
+    }
+
+    .row {
+      justify-content: center;
+    }
+
+    .caption {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: lightblue;
+    background-color: #36454f;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin: 20px 0;
+    }
+    
+    .navbar-nav {
+      flex-direction: row;
+      width: auto;
+    }
+
+    .nav-link {
+      text-align: left;
+      transition: background-color 0.3s, color 0.3s;
+      padding: 10px 15px; 
+    }
+
+    .nav-link:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+      color: #A7E6FF;
+      border-radius: 10px;
+    }
+
+    .navbar-brand {
+      text-align: left;
+      transition: background-color 0.3s, color 0.3s;
+      padding: 10px 15px;
+    }
+
+    .navbar-brand:hover {
+      color: #A7E6FF;
+    }
+
+    .footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.social-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-link:hover {
+    text-decoration: underline;
+}
+
+  </style>
+</head>
+<body>
+
+  <video autoplay muted loop id="video-background">
+    <source src="adu.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+
+  <div class="overlay"></div>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">PORTFOLIO</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="labs.html">Exercises</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="resources.html">Other</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container my-5">
+    <h1 class="caption">LABORATORY EXERCISES</h1>
+    <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
+      
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">LAB ACTIVITY #1</h5>
+            <p class="card-text">This lab activity involves creating a PHP-based patient information system for Philippine General Hospital. The form collects the 
+              patient's name, gender, age, number of days, and initial deposit. The system calculates the total amount based on gender-specific prices (₱150 for males,
+               ₱85 for females) and applies age-based discounts. The net amount is the total after discount, and the balance is calculated by subtracting the initial 
+               deposit. A report is generated with all transaction details, including patient information, total amount, discount, net amount, and balance.</p>
+            <a href="http://localhost/activities/labact1.php" class="btn btn-primary">View Lab</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">LAB ACTIVITY #2</h5>
+            <p class="card-text">This PHP-based application allows users to generate a customized multiplication table by inputting the number of rows and columns. 
+              The user simply enters their desired values, and the application dynamically creates and displays a multiplication table based on their input. 
+              It's a simple and interactive tool for visualizing and practicing multiplication.</p>
+            <a href="http://localhost/activities/mt.php" class="btn btn-primary">View Lab</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">LAB ACTIVITY #3</h5>
+            <p class="card-text">This application is about this Adamson University Online Registration system enables students to register for courses and calculate
+               tuition fees. Students select their course (Information Technology, Civil Engineering, Accountancy, or Nursing), input the number of units, and the 
+               system computes the tuition fee based on the course's rate per unit. A lab fee of 2500 is added, with a 25% down payment for bills over 10,000, or 10% 
+               for lower amounts. The system also generates a receipt with the student's details, course, total bill, down payment, and remaining balance.</p>
+            <a href="http://localhost/activities/labact3.php" class="btn btn-primary">View Lab</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-content">
+        <p>&copy; 2024 Delos Reyes. All Rights Reserved.</p>
+        <p>Follow us on social media: 
+            <a href="https://www.facebook.com/francop777" class="social-link">Facebook</a> | 
+            <a href="https://www.instagram.com/pranko777/" class="social-link">Instagram</a>
+        </p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
